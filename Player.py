@@ -18,4 +18,13 @@ root.resizable(width=0, height=0)
 pygame.init()
 pygame.mixer.init()
 
+#===empty thread list=========#
+threads = []
+
+# =====show an icon for the application
+
+def get_icon():
+    winicon = PhotoImage(file="best (2).png")
+    root.iconphoto(False, winicon)
+
 
