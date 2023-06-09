@@ -27,4 +27,11 @@ def get_icon():
     winicon = PhotoImage(file="best (2).png")
     root.iconphoto(False, winicon)
 
+#=====run the get_icon on a different thread from the gui=====#
+
+def icon():
+    mythreads = threading.Thread(target=get_icon)
+    threads.append(mythreads)
+    mythreads.start()
+
 
