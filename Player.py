@@ -34,4 +34,19 @@ def icon():
     threads.append(mythreads)
     mythreads.start()
 
+icon()
+
+#=======all Button symbols and variables======#
+PLAY = "►"
+PAUSE = "║║"
+RWD = "⏮"
+FWD = "⏭"
+STOP = "■"
+UNPAUSE = "||"
+mute = "🔇"
+unmute = u"\U0001F50A"
+vol_mute = 0.0
+vol_unmute = 1
+
+
 
