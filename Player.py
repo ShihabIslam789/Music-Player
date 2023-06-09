@@ -14,3 +14,8 @@ root.title("Mp3 Music Player")
 root.configure(bg="black")
 root.resizable(width=0, height=0)
 
+#=====initialize pygame=====#
+pygame.init()
+pygame.mixer.init()
+
+
