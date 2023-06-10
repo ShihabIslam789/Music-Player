@@ -57,4 +57,10 @@ play_list.place(x=505, y=77)
 scroll.config(command=play_list.yview)
 play_list.config(yscrollcommand=scroll.set)
 
+img = PhotoImage(file="best (2).png", width=500, height=460)
+lab = Label(root)
+lab.grid()
+lab["compound"] = LEFT
+lab["image"] = img
+
 
