@@ -48,5 +48,13 @@ unmute = u"\U0001F50A"
 vol_mute = 0.0
 vol_unmute = 1
 
+#==========music playlist listbox=========#
+scroll = Scrollbar(root)
+play_list = Listbox(root, font="Sansarif 12 bold", bd=5,
+                    bg="white", width=37, height=19, selectbackground="black")
+scroll.place(x=850, y=80, height=380, width=15)
+play_list.place(x=505, y=77)
+scroll.config(command=play_list.yview)
+play_list.config(yscrollcommand=scroll.set)
 
 
