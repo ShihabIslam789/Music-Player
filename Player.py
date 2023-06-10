@@ -84,3 +84,10 @@ def append_listbox():
     except:
         showerror("File selcted error", "Please choose a file correctly")  
 
+# =====run the append_listbox function on separate thread======"
+def add_songs_playlist():
+    mythreads = threading.Thread(target=append_listbox)
+    threads.append(mythreads)
+    mythreads.start()
+
+
