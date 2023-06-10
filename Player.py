@@ -63,4 +63,11 @@ lab.grid()
 lab["compound"] = LEFT
 lab["image"] = img
 
+#=====show the song playing==========#
+var = StringVar()
+var.set("..............................................................................")
+song_title = Label(root, font="Helvetica 12 bold", bg="black",
+                   fg="white", width=48, textvariable=var)
+song_title.place(x=10, y=5)
+
 
