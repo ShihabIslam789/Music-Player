@@ -70,4 +70,17 @@ song_title = Label(root, font="Helvetica 12 bold", bg="black",
                    fg="white", width=48, textvariable=var)
 song_title.place(x=10, y=5)
 
+# =====add a music list to the listbox======"
+def append_listbox():
+    directory = askdirectory()
+    try:
+        os.chdir(directory)# it permits to change the current dir
+        song_list = os.listdir()
+        song_list.reverse()
+        for item in song_list: # it returns the list of files song
+            pos = 1
+            play_list.insert(pos, item)
+            pos += 1
+    except:
+        showerror("File selcted error", "Please choose a file correctly")  
 
