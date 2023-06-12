@@ -125,6 +125,18 @@ def pause_unpause():
         pygame.mixer.music.pause()
         button_pause['text'] = UNPAUSE
 
+     elif button_pause['text'] == UNPAUSE:
+        pygame.mixer.music.unpause()
+        button_pause['text'] = PAUSE
+
+# ==play the music on a diffent thread from the gui==
+
+def play_thread():
+    mythreads = threading.Thread(target=Play_music)
+    threads.append(mythreads)
+    mythreads.start()
+   
+
 
 
 
