@@ -118,5 +118,13 @@ def Play_music():
     except:
         showerror("No Music", "Please load the music you want to play")
 
+# ===pause and unpause==
+
+def pause_unpause():
+    if button_pause['text'] == PAUSE:
+        pygame.mixer.music.pause()
+        button_pause['text'] = UNPAUSE
+
+
 
 
