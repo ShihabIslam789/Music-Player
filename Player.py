@@ -141,6 +141,11 @@ def play_thread():
 def stop():
     pygame.mixer.music.stop()
 
+#====increase and decrease volume when slider is moved()==#
+
+def volume(x):
+    pygame.mixer.music.set_volume(slider.get())
+
 
 
 
