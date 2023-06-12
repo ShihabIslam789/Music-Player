@@ -105,5 +105,18 @@ def get_time():
     progress["value"] = int(current_time)
     root.after(100, get_time)
 
+#=====play the music==#
+def Play_music():
+    try:
+        track = play_list.get(ACTIVE)
+        pygame.mixer.music.load(play_list.get(ACTIVE))
+        var.set(track)
+        pygame.mixer.music.play()
+        
+        get_time()
+             
+    except:
+        showerror("No Music", "Please load the music you want to play")
+
 
 
