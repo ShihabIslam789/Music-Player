@@ -99,5 +99,11 @@ def get_time():
     song = play_list.get(next_one)
     song_timer = MP3(song)
     song_length = int(song_timer.info.length)
+    format_for_length = time.strftime("%H:%M:%S", time.gmtime(song_length))
+    label_time.config(text=f"{ format_for_length} / {formated_time}")
+    progress["maximum"] = song_length
+    progress["value"] = int(current_time)
+    root.after(100, get_time)
+
 
 
