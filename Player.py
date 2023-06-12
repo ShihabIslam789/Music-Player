@@ -90,4 +90,14 @@ def add_songs_playlist():
     threads.append(mythreads)
     mythreads.start()
 
+    #=====show music time=========#
+def get_time():
+    global next_one
+    current_time = pygame.mixer.music.get_pos() / 1000
+    formated_time = time.strftime("%H:%M:%S", time.gmtime(current_time))
+    next_one = play_list.curselection()
+    song = play_list.get(next_one)
+    song_timer = MP3(song)
+    song_length = int(song_timer.info.length)
+
 
