@@ -154,6 +154,12 @@ def muted():
         slider.set(vol_mute)
         button_mute['fg'] = "red"
         button_mute['text'] = mute
+     elif button_mute['text'] == mute:
+        pygame.mixer.music.set_volume(vol_unmute)
+        slider.set(vol_unmute)
+        button_mute['fg'] = "white"
+        button_mute['text'] = unmute
+
 
 
 
