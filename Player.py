@@ -162,7 +162,6 @@ def muted():
 
 #===move to the next song===#
 
-
 def nextsong():
     try:
         next_one = play_list.curselection()
@@ -177,6 +176,21 @@ def nextsong():
     except:
         showerror("No Next Song", "Please press the previous button")
 
+#===move to the previous song===#
+
+def prev_song():
+    try:
+        next_one = play_list.curselection()
+        next_one = next_one[0]-1
+        song = play_list.get(next_one)
+        pygame.mixer.music.load(song)
+        pygame.mixer.music.play()
+        play_list.select_clear(0, END)
+        play_list.activate(next_one)
+        play_list.selection_set(next_one, last=None)
+        var.set(song)
+    except:
+        showerror("No previous Song", "Please press the Next button")
 
 
 
