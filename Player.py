@@ -146,6 +146,15 @@ def stop():
 def volume(x):
     pygame.mixer.music.set_volume(slider.get())
 
+# ====mute and unmute the song while the song plays
+
+def muted():
+    if button_mute['text'] == unmute:
+        pygame.mixer.music.set_volume(vol_mute)
+        slider.set(vol_mute)
+        button_mute['fg'] = "red"
+        button_mute['text'] = mute
+
 
 
 
