@@ -192,6 +192,18 @@ def prev_song():
     except:
         showerror("No previous Song", "Please press the Next button")
 
+#=====exit the application=====#
+
+def exit():
+    MsgBox = askquestion(
+        'Exit Application', 'Are you sure you want to exit the music player.', icon='warning')
+    if MsgBox == 'yes':
+        root.destroy()
+    else:
+        showinfo(
+            'Return', 'Continue playing your awesome music')
+    return
+
 
 
 
