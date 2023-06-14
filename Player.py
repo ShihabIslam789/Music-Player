@@ -235,6 +235,12 @@ root.config(menu=menu)
 menu.add_command(label="Help", command=help)
 menu.add_command(label="Exit", command=exit)
 
+separator = ttk.Separator(lab, orient='horizontal')
+separator.place(relx=0, rely=0.85, relwidth=1, relheight=1)
+button_play = Button(root, text=PLAY, width=5, bd=5, bg="black",
+                     fg="white", font="Helvetica, 15", command=play_thread)
+button_play.place(x=150, y=407)
+
 
 
 
