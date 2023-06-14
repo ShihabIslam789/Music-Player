@@ -228,6 +228,13 @@ def help():
                        font="Helvetica, 11", bg="black", fg="white")
         manual.pack(side=TOP, fill=BOTH)
 
+# THis part contains the menu, volume slider , music playlist label and the volume slider
+
+menu = Menu(lab, font="helvetica, 3",)
+root.config(menu=menu)
+menu.add_command(label="Help", command=help)
+menu.add_command(label="Exit", command=exit)
+
 
 
 
