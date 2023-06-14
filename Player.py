@@ -204,6 +204,14 @@ def exit():
             'Return', 'Continue playing your awesome music')
     return
 
+#=====Help window=====#
+
+def help():
+    top = Toplevel()
+    top.title("Help")
+    top.geometry("350x554+500+80")
+    top.resizable(width=0, height=0)
+    user_manual = [
 
 
 
