@@ -212,6 +212,15 @@ def help():
     top.geometry("350x554+500+80")
     top.resizable(width=0, height=0)
     user_manual = [
+         " MUSIC PLAYER USER MANUAL: \n",
+        "1. play button =  ( ► )",
+        "2. pause button = ║║ ",
+        "3. unpause symbol = ||",
+        "4. next button = ⏭ ",
+        "5. previous button = ⏮",
+        "6. mute button = '\U0001F50A' ",
+        "7. unmute symbol = 🔇",
+        "8. stop button = ■ ",
 
 
 
