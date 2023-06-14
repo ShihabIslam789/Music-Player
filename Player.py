@@ -240,6 +240,11 @@ separator.place(relx=0, rely=0.85, relwidth=1, relheight=1)
 button_play = Button(root, text=PLAY, width=5, bd=5, bg="black",
                      fg="white", font="Helvetica, 15", command=play_thread)
 button_play.place(x=150, y=407)
+button_stop = Button(root, text=STOP, width=5, bd=5,
+                     font="Helvetica, 15", bg="black", fg="white", command=stop)
+button_stop.place(x=225, y=407)
+button_prev = Button(root, text=FWD, width=5, bd=5,
+                     font="Helvetica, 15", bg="black", fg="white", command=nextsong)
 
 
 
