@@ -222,6 +222,12 @@ def help():
         "7. unmute symbol = 🔇",
         "8. stop button = ■ ",
 
+        ]
+    for i in user_manual:
+        manual = Label(top, text=i, width=50, height=3,
+                       font="Helvetica, 11", bg="black", fg="white")
+        manual.pack(side=TOP, fill=BOTH)
+
 
 
 
