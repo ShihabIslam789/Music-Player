@@ -254,6 +254,11 @@ button_pause = Button(root, text=PAUSE, width=4, bd=5,
 button_pause.place(x=85, y=407)
 button_mute = Button(root, text=unmute, width=2, bd=5,
                      font="Helvetica, 15", bg="black", fg="white", command=muted)
+button_mute.place(x=375, y=407)
+
+label_playlist = Label(root, text=u"♫ Music Playlist ♫ ",
+                       width=25, font="Helvetica, 15")
+label_playlist.place(x=540, y=10)
 
 
 
