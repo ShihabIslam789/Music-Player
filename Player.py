@@ -249,6 +249,11 @@ button_prev.place(x=300, y=407)
 button_next = Button(root, text=RWD, width=5, bd=5, bg="black",
                      fg="white", font="Helvetica, 15", command=prev_song)
 button_next.place(x=10, y=407)
+button_pause = Button(root, text=PAUSE, width=4, bd=5,
+                      font="Helvetica, 15", bg="black", fg="white", command=pause_unpause)
+button_pause.place(x=85, y=407)
+button_mute = Button(root, text=unmute, width=2, bd=5,
+                     font="Helvetica, 15", bg="black", fg="white", command=muted)
 
 
 
