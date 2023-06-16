@@ -259,6 +259,13 @@ button_mute.place(x=375, y=407)
 label_playlist = Label(root, text=u"♫ Music Playlist ♫ ",
                        width=25, font="Helvetica, 15")
 label_playlist.place(x=540, y=10)
+button_load_music = Button(root, text="♫ Click Here To Load The Music ♫", width=43,
+                           bd=5, font="Helvetica, 10", bg="black", fg="white", command=add_songs_playlist)
+button_load_music.place(x=505, y=45)
+
+slider = ttk.Scale(lab, from_=0, to=1, orient=HORIZONTAL,
+                   value=1, length=80, command=volume)
+slider.place(x=415, y=415)
 
 
 
