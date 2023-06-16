@@ -245,6 +245,10 @@ button_stop = Button(root, text=STOP, width=5, bd=5,
 button_stop.place(x=225, y=407)
 button_prev = Button(root, text=FWD, width=5, bd=5,
                      font="Helvetica, 15", bg="black", fg="white", command=nextsong)
+button_prev.place(x=300, y=407)
+button_next = Button(root, text=RWD, width=5, bd=5, bg="black",
+                     fg="white", font="Helvetica, 15", command=prev_song)
+button_next.place(x=10, y=407)
 
 
 
