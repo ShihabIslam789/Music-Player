@@ -266,6 +266,17 @@ button_load_music.place(x=505, y=45)
 slider = ttk.Scale(lab, from_=0, to=1, orient=HORIZONTAL,
                    value=1, length=80, command=volume)
 slider.place(x=415, y=415)
+progress = ttk.Progressbar(lab, orient=HORIZONTAL, value=0, length = 350, mode = 'determinate')
+progress.place(x=0, y=368)
+
+label_time = Label(root, text="00:00:00 / 00:00:00",
+                       width=17, font="Helvetica, 10", bg="black", fg="white")
+label_time.place(x=355, y=369)
+
+
+
+root.mainloop()
+
 
 
 
