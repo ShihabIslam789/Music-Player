@@ -43,3 +43,21 @@ class Player(ttk.Frame):
         self.UN_MUTE = u"\U0001F50A"
         self.vol_mute = 0.0
         self.vol_unmute = 1
+
+   #==========music playlist listbox=========#
+        self.scroll = ttk.Scrollbar(master, bootstyle="round")
+        self.play_list = Listbox(master, font="Sansarif 12 bold", bd=5,
+                            bg="white", width=37, height=19, selectbackground="blue")
+        self.play_list.place(x=600, y=77)
+        self.scroll.place(x=946, y=80, height=389, width=15)
+        self.scroll.config(command=self.play_list.yview)
+        self.play_list.config(yscrollcommand=self.scroll.set)
+        
+        self.img1 = Image.open(IMAGE_PATH)
+        self.img1 =  self.img1.resize((600, 470), Image.Resampling.LANCZOS)
+        self.img = ImageTk.PhotoImage(self.img1)
+        self.lab = Label(master)
+        self.lab.grid(row=0, column=0)
+        self.lab["compound"] = LEFT
+        self.lab["image"] = self.img
+     
