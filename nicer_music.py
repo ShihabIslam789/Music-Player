@@ -60,4 +60,18 @@ class Player(ttk.Frame):
         self.lab.grid(row=0, column=0)
         self.lab["compound"] = LEFT
         self.lab["image"] = self.img
+
+           #=====show the song playing==========#
+        self.var = StringVar()
+        self.var.set("..............................................................................")
+        self.song_title = Label(master, font="Helvetica 12 bold", bg="black",
+                        fg="white", width=55, textvariable=self.var)
+        self.song_title.place(x=3, y=0)
+        
+        #===================bindings=================#
+        
+        self.master.bind("<space>", lambda x: self.play_thread())
+        self.master.bind('<Left>', lambda x: self.prev())
+        self.master.bind('<Right>', lambda x: self.next())
+        
      
