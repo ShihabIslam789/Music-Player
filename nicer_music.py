@@ -23,3 +23,23 @@ from mutagen.mp3 import MP3
 CURRENT_SONG_INDEX = 0
 NUMBER_OF_SONGS_IN_LIST = 0
 IMAGE_PATH = 'images/best.png'
+
+class Player(ttk.Frame):
+    
+    pygame.init()
+    pygame.mixer.init()
+    
+    def __init__(self, master):
+        self.master = master
+        
+        #=======all Button symbols and variables======#
+        self.PLAY = "►"
+        self.PAUSE = "║║"
+        self.RWD = "⏮"
+        self.FWD = "⏭"
+        self.STOP = "■"
+        self.UN_PAUSE = "||"
+        self.MUTE = "🔇"
+        self.UN_MUTE = u"\U0001F50A"
+        self.vol_mute = 0.0
+        self.vol_unmute = 1
